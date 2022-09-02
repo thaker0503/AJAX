@@ -1,0 +1,40 @@
+Good Evening to all 
+
+AJAX
+
+Ajax/XHR task - API call by using jQuery AJAX and JS XMLHttpRequest
+API description
+
+1. GET :
+http://192.168.0.163:3000/api/v1/products/
+
+2. POST :
+http://192.168.0.163:3000/api/v1/products/
+JSON data
+{
+	"prod_name": "NAME",
+	"prod_desc": "DESC",
+	"prod_price": 100
+}
+
+3. PUT:
+http://192.168.0.163:3000/api/v1/products/<product_id>
+
+Task :
+1. create HTML page with
+	a) "Add product" button
+	b) product list
+	c) "edit product" button in each product list row
+2. create AJAX request to
+	a) list down all products with your name in it
+	b) edit product button click to edit product name/desc/price
+	c) add product button click to add new product with name/desc/price
+
+In point 2-a you see that you've to list down only those products which has your name in it so for that whenever you add your product, in product name field you have to add your name for eg. if you're adding product name "Test product" then your name will concat like :
+==> "Test product Yatharth"
+==> "Test product Shyaml"
+==> "Test product Bhakti"
+==> "Test product Amisha"
+==> "Test product Drashti"
+
+(192.168.0.163:3000 It would be your local server IP address and Port which binned to it)
