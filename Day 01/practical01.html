@@ -4,20 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice | AJAX </title>
+    <title>Practical 01 | AJAX</title>
 </head>
-<body>
-    <p id="output"></p>
+<body id="body">
+    <h1 id="heading"></h1>
+    <pre id="output"></pre>
+
     <script>
-        var xhr = new XMLHttpRequest();
-            xhr.open("GET", "notes.txt", true); 
-            xhr.send();
-            console.log(xhr)
-            if(xhr.readyState == 4 && xhr.status == 200){
-                alert("Recieved...")
-                console.table(xhr.responseText);
-                document.getElementById("output").innerText = xhr.response
-            }
+        var a = new XMLHttpRequest;
+        //  --------------------------------------------------------------------------
+        
+        // Asynchronous Get Method
+
+        // a.onload = function(){
+        //     if(a.readyState == 4 && a.status == 200){
+        //         console.log(a)
+        //         document.getElementById("heading").innerHTML = a.getResponseHeader("last-modified")
+        //         document.getElementById("output").innerHTML += "<h1>File Headers:</h1><br/><br/>" + a.getAllResponseHeaders()+ "<br/><br/><br/>" + "<h1>File Content:</h1><br/><br/>" + a.responseText
+                
+        //     }
+        // }
+        // a.open("GET", "./notes.txt", true);
+        // a.send();
+        // --------------------------------------------------------------------------
+        
+        // --------------------------------------------------------------------------
+        
+        // Synchronous Get Method
+        
+            // a.open("GET", "./notes.txt", false);
+            // a.send();
+            // document.getElementById("heading").innerHTML = a.getResponseHeader("last-modified")
+            // document.getElementById("output").innerHTML += "<h1>File Headers:</h1><br/><br/>" + a.getAllResponseHeaders() + "<br/><br/><br/>" + "<h1>File Content:</h1><br/><br/>" + a.responseText
+        
+        // --------------------------------------------------------------------------
+        
+        // --------------------------------------------------------------------------
+
+        // Asynchronous POST Method
+        
+        // a.open("POST", "notes.txt",false);
+        // var params = "This is added using POST method..";
+        // a.onload = function(){
+        //     if (a.status == 200 && a.readyState == 4) {
+        //         alert("POSTing Successfull!")
+        //     }
+        // }
+        // a.onerror = function(){
+        //     alert("Error Occured!")
+        // }
+        // a.send(params);
+
     </script>
+    
 </body>
 </html>
