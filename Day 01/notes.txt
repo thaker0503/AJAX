@@ -1,0 +1,33 @@
+AJAX - Asynchronous JavaScript and XML
+    It is not a programming language
+    AJAX just uses a combination of:
+
+       1. A browser built-in XMLHttpRequest object (to request data from a web server)
+       2. JavaScript and HTML DOM (to display or use the data)
+
+## Features of AJAX 
+    1. Update a webpage without reloading it.
+    2. Request data from server - after the page has loaded
+    3. Recieve data from server - after the page has loaded
+    4. Send data to the server - in the background
+
+
+AJAX is a misleading name. AJAX applications might use XML to transport data, but it is equally common to transport data as plain text or JSON text.
+
+
+## XMLHttpRequest object  Methods
+    1. variable = new XMLHttpRequest(); 
+    2. abort()                           
+    3. getAllResponseHeaders()           
+    4. getResponseHeaders()                 
+    5. open(method,url,async,user,psw)   
+    6. send()                            
+    7. send(string)                      
+    8. setRequestHeader()               
+
+## XMLHttpRequest object  Properties
+    1. onreadystatechange
+    2. readyState
+    3. responseText
+
+
